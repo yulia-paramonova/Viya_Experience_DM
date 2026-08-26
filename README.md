@@ -16,6 +16,33 @@ Check the number of rows and columns
 Use information catalog to profile `VXP_DIABETIC_DATA`.  
 Then assign business descriptions to selected variables.
 
+### Create Term Type 
+Name : Patient Information  
+Description : Business glossary term type used to document patient-related data elements and their privacy protection requirements. It helps identify whether sensitive patient information must be encrypted, masked, or otherwise protected before being used for analytics, reporting, or AI applications.  
+
+Attributes :
+**Needs to be encrypted**  
+Attribute Type: Boolean (Yes/No)  
+Description:  
+Indicates whether the data element must be encrypted or hashed to protect sensitive patient information from unauthorized disclosure. Encryption helps ensure that the original value cannot be reconstructed without the appropriate key and can be used to safely protect identifiers such as patient numbers.  
+
+Examples:  
+Patient ID → Yes  
+Patient Number → Yes  
+Primary Diagnosis → No  
+HbA1c Result → No  
+
+**Needs to be masked**  
+Attribute Type: Boolean (Yes/No)  
+Description:  
+Indicates whether the data element should be masked before being displayed, shared, or used by authorized users. Masking reduces the visibility of sensitive information while preserving the data's analytical value and helping to protect patient privacy.  
+
+Examples:  
+Race → Yes  
+Gender → Yes (depending on policy)  
+Patient Name → Yes  
+HbA1c Result → No  
+
 ## Step 3 : Prepare data in SAS Data and AI Studio
 <img width="2000" height="1075" alt="image" src="https://github.com/user-attachments/assets/1b7b3b75-11c7-4364-997b-500ddcdae114" />
 
