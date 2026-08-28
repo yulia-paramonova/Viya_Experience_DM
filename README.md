@@ -1,4 +1,4 @@
-# Viya_Experience_DM
+# Viya Experience Data Management
 Imagine you have just joined the data analytics team of the Ministry of Health.  
 
 Your mission is to analyze hospital readmissions among diabetic patients and deliver reliable insights to healthcare decision-makers. Before any analysis can begin, you must ensure that the data is accurate, complete, and secure.  
