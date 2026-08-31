@@ -50,8 +50,8 @@ Description: `Indicates whether the data element should be masked before being d
 *New term:* `Patient identification`  
 *Term type:* `Patient Information`  
 → *Create term*  
-*Definition:* `The principal medical condition identified during a patient encounter, hospitalization, or episode of care and considered the primary reason for treatment or healthcare services. The diagnosis is represented using an ICD-9 code to support standardized clinical documentation, reporting, analysis, reimbursement, and healthcare research.`  
-*Description:* `Represents the main diagnosis assigned to a patient by a healthcare professional. This term covers diagnoses recorded as the primary reason for care and encoded using the ICD-9 classification standard. It is used for clinical reporting, population health analysis, billing, regulatory reporting, and healthcare research. Only one primary diagnosis should be assigned per patient encounter or episode of care according to organizational coding guidelines.`   
+*Definition:* `Information used to uniquely identify and distinguish a patient within a healthcare organization or information system. This includes patient identifiers such as patient ID, medical record number, or other unique identifiers that enable accurate linking of clinical, administrative, and analytical records to the correct individual while supporting continuity of care.`  
+*Description:* `Represents data elements used to uniquely identify a patient across healthcare systems and business processes. This term covers patient identifiers assigned by healthcare providers or organizations and used for record matching, patient tracking, care coordination, reporting, and analytics. Values classified under this term contain personally identifiable information (PII) and typically require appropriate privacy protection measures, including encryption and masking according to organizational policies.`   
 *Attributes:* `Needs to be encrypted`  
 → *Save and Publish Draft*  
 → Assign it to `patient_nbr`
