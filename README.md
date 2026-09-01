@@ -1,4 +1,13 @@
-# Viya Experience Data Management
+# Welcome to Viya Experience
+
+[SAS Viya Trial](https://www.sas.com/fr_fr/trials/software/viya/viya-trial-form.html)  
+
+[Accès Viya Trial](https://engage.my-trials.sas.com/onboard/return/XXXXXX)
+
+[Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=XE3BsSU2s0WkMJVSNzoML7xb9kiO-RZHjfeO7_4YlBNURExJMFpTWFZOVVhUNkRNVUNDTjlQMlVQTy4u)  
+
+
+# Viya Experience - Data Management
 Imagine you have just joined the data analytics team of the Ministry of Health.  
 
 Your mission is to analyze hospital readmissions among diabetic patients and deliver reliable insights to healthcare decision-makers. Before any analysis can begin, you must ensure that the data is accurate, complete, and secure.  
