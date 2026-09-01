@@ -69,7 +69,8 @@ Description: `Indicates whether the data element should be masked before being d
 ## Step 3 : Prepare data in *SAS Data and AI Studio*
 <img width="2000" height="1075" alt="image" src="https://github.com/user-attachments/assets/1b7b3b75-11c7-4364-997b-500ddcdae114" />
 
-### Cities :  
+In order to use the data for modeling or reporting we need to ensure the quality (no duplicates in rows or columns, standard values for character variables) and protection (encryption or masking).
+### a. Cities :  
 1. Remove duplicates (215->176)
 2. Clean data :  
    Standardize : `Geo_City` → City  
@@ -80,20 +81,24 @@ Description: `Indicates whether the data element should be masked before being d
 4. Improve zip code using [Geo_Data_CP.sas](./Geo_Data_CP.sas)
 5. Save to a table WORK.CITIES
 
-### Diabetic patients data :  
+### b. Diabetic patients data :  
 1. Add primary diagnosis category based on code using [Patient_data_diag.py](./Patient_data_diag.py) 
 2. Mask data :    
 race → Mask all except first and last  
 gender → Truncate to initial
 3. Save to a table WORK.PATIENTS
 
-### Join CITIES and PATIENTS
+### c. Join CITIES and PATIENTS
 Left Join on `Postal code`=`CP`  
 Save to a table CASUSER.VXP_DM_READY  
 
-## Step 4 : Explore the data in SAS Visual Analytics 
-1. `Readmitted` - drag and drop to the canvas
-2. `Patient_nbr` - convert to category + New calculation Distinct count then add to the Readmitted graph
-3. `Geo_Region` - New Geography - region by name then drag and drop to the canvas
-4. `Geo_City` - New Geography by latitude and longitude
-5. New Hierarchy `Geo_Region-Geo_City` then drag and drop
+## Step 4 : *Explore and visualise* the data 
+1. `Readmitted` - drag and drop to the canvas. Interpret the results. Do you consider the number of readmissions high?
+2. `Patient_nbr` - convert to category + New calculation Distinct count then add to the Readmitted graph. Interpret the results. What it the number of readmitted patients?
+3. `Geo_Region` - New Geography - region by name then drag and drop to the canvas. What regions are the most impacted?
+4. `Geo_City` - New Geography by latitude and longitude.
+5. New Hierarchy `Geo_Region-Geo_City` then drag and drop. Double click on the most impacted regions, which cities have too many readmissions?
+6. `Readmitted_flag` - right click convert to category, then right click and Explain on a New page. Interpret the results.
+
+## Step 5 (optional) : *Build models*
+Train several machine learning models and choose the best performing one to accurately predict the readmissions based on patients characteristics.
