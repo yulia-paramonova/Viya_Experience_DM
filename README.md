@@ -6,7 +6,6 @@
 
 [Questionnaire](https://forms.office.com/Pages/ResponsePage.aspx?id=XE3BsSU2s0WkMJVSNzoML7xb9kiO-RZHjfeO7_4YlBNURExJMFpTWFZOVVhUNkRNVUNDTjlQMlVQTy4u)  
 
-[lien 1](https://link.sas.com/f/a/DXIbA-KMN_cJqnu0Jz4sXw~~/AAQRrxA~/T_rMmoZY8ogx2As2ZFkB0c67bWCw9CjIpsVKmp9iaN3tIMzfv8fvwtNdQLfJm0sc64F7HxBk8VtXPAB3RqPHYOI5k0L0bbbn7MqBRjIN9qXaDjTWRlhmUoQrgk2lWvxBVhnFA75Q25QPAVDpu70VuQ~~)
 
 # Viya Experience - Data Management
 Imagine you have just joined the data analytics team of the Ministry of Health.  
